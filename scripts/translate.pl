@@ -31,7 +31,7 @@ my $words_map = &words_map("map.txt");
 print Dumper($words_map);
 my $file= "messages_zh.po";
 open (my $fh_in ,"<:encoding(UTF-8)", $file) or die "$!";
-open (my $fh_out,">:encoding(UTF-8)","messages_zh_CN.po");
+open (my $fh_out,">:encoding(UTF-8)","../messages_zh_CN.po");
 
 while (my $line = <$fh_in>){
     if ($line =~/^\s*$/){
